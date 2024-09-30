@@ -5,4 +5,8 @@ spring:
         username: ${USERNAME}
         password: ${PASSWORD}
         url: ${URL}
-        driver-class-name: ${DRIVER_CLASS}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: validate
+        generate-ddl: false
